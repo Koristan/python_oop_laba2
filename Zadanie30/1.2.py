@@ -1,0 +1,19 @@
+class User:
+    def setName(self,name):
+        self.name = name 
+
+    def getName(self):
+        return self.name 
+
+class Employee(User):
+    def getName(self):
+        return self.__name
+    
+    def getSalary(self):
+        return self.__salary
+    
+    def setName(self, name):
+        self.__name = name
+    
+    def setSalary(self, salary):
+        self.__salary = salary
